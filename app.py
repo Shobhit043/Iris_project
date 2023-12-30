@@ -26,8 +26,6 @@ def predict():
         user_inputs['sepal_width'] = float(request.form['sepal_width'])
         user_inputs['petal_length'] = float(request.form['petal_length'])
         user_inputs['petal_width'] = float(request.form['petal_width'])
-    except ValueError:
-        return render_template('index.html', predicted_output=predicted_output)
 
     model = pickle.load(open('iris_model','rb'))
     
