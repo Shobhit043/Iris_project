@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 user_inputs = {'sepal_length': None, 'sepal_width': None,'petal_length': None, 'petal_width': None }
 predicted_output = None
+model = pickle.load(open('iris_model','rb'))
 
 @app.route('/')
 def home():
@@ -27,7 +28,6 @@ def predict():
         user_inputs['petal_length'] = float(request.form['petal_length'])
         user_inputs['petal_width'] = float(request.form['petal_width'])
 
-    model = pickle.load(open('iris_model','rb'))
     
     predicted_output = model.predict(pd.DataFrame(user_inputs,index=[0]))
     
