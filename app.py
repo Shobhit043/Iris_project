@@ -20,7 +20,6 @@ def iris_profile():
 
 @app.route('/', methods=['POST'])
 def predict():
-    global predicted_output
 
     try:
         user_inputs['sepal_length'] = float(request.form['sepal_length'])
