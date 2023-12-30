@@ -20,14 +20,11 @@ def iris_profile():
 
 @app.route('/', methods=['POST'])
 def predict():
+    user_inputs['sepal_length'] = float(request.form['sepal_length'])
+    user_inputs['sepal_width'] = float(request.form['sepal_width'])
+    user_inputs['petal_length'] = float(request.form['petal_length'])
+    user_inputs['petal_width'] = float(request.form['petal_width'])
 
-    try:
-        user_inputs['sepal_length'] = float(request.form['sepal_length'])
-        user_inputs['sepal_width'] = float(request.form['sepal_width'])
-        user_inputs['petal_length'] = float(request.form['petal_length'])
-        user_inputs['petal_width'] = float(request.form['petal_width'])
-
-    
     predicted_output = model.predict(pd.DataFrame(user_inputs,index=[0]))
     
     if(predicted_output==0):predicted_output='setosa'
