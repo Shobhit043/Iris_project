@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Iris Dataset</title>
+
+
+  <style>
+    #img1 {
+      margin-bottom: 1rem;
+    }
+
+    #img2 {
+      margin-bottom: 2.5rem;
+    }
+
+    #img3 {
+      margin-bottom: 3.5rem;
+    }
+
+    /* #temp h2,
+    #temp li,
+    #temp p,*/
+    #temp1 {
+      background-color: #f8f9fa;
+    }
+
+    #temp2 {
+      padding: 50px;
+      background-color: white;
+      width: 1113px;
+      margin-left: 113px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">IRIS DATASET</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" href="https://www.kaggle.com/datasets/uciml/iris">Dataset</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" href="/iris_profile">Analysis</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Iris_virginica_2.jpg/220px-Iris_virginica_2.jpg"
+              alt="image not found" style="width:356px; height:273px; padding:5px;">
+            <div>
+              <h2 style="padding-left:100px;">Virginica</h2>
+              <p class="card-text" id="img1" style="padding-left: 15px;">
+                Iris virginica, native to North America, is recognized for its large and showy blue to violet flowers,
+                often with yellow or white highlights. Thriving in wetland areas, this species, commonly known as the
+                Virginia iris, displays sword-shaped leaves and contributes to the biodiversity of aquatic ecosystems.
+                It is both admired for its ornamental beauty and valued for its ecological role.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              src="https://www.plant-world-seeds.com/images/item_images/000/003/884/large_square/IRIS_VERSICOLOR.JPG?1495391088"
+              alt="image not found" style="width:356px; height:273px; padding:5px;">
+
+
+            <div>
+              <h2 style="padding-left:100px;">Versicolor</h2>
+              <p class="card-text" id="img2" style="padding-left: 15px;">
+                Iris versicolor, commonly known as the blue flag iris, is a North American species with striking blue to
+                violet flowers and distinctive yellow or white markings. Thriving in wetland habitats, this iris
+                features sword-like leaves and is valued for its vibrant appearance. It serves as both an ornamental
+                plant and an essential part of natural wetland ecosystems.
+              <p>
+                <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqapN50GUqja9rgOakNkbh6pmo97h7EFknRQ&usqp=CAU"
+              alt="image not found" style="width:356px; height:273px; padding:5px;">
+
+            <div>
+              <h2 style="padding-left:100px;">Setosa</h2>
+              <p class="card-text" id="img3" style="padding-left: 15px;">
+                Iris setosa is a species of iris plant characterized by its distinctive blue-violet flowers with
+                striking yellow markings. It is a hardy perennial that thrives in various climates and is often
+                cultivated for its ornamental beauty. The plant's unique appearance makes it easily recognizable among
+                iris species.</p>
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div id="temp1">
+      <div id="temp2">
+        <h2>About Dataset</h2>
+        <p>
+          The Iris dataset was used in R.A. Fisher's classic 1936 paper, The Use of Multiple Measurements in Taxonomic
+          Problems, and can also be found on the UCI Machine Learning Repository.
+
+          It includes three iris species with 50 samples each as well as some properties about each flower. One flower
+          species is linearly separable from the other two, but the other two are not linearly separable from each
+          other.
+        </p>
+        <p>The columns in this dataset are:</p>
+
+        <li>Id</li>
+        <li>SepalLengthCm (4 - 8)</li>
+        <li>SepalWidthCm  (2 - 5)</li>
+        <li>PetalLengthCm (1 - 7)</li>
+        <li>PetalWidthCm  (0.1 - 3)</li>
+        <li>Species</li>
+        </p>
+        <h2>Machine Learning Prediction</h2>
+        <form action="{{ url_for('predict') }}" method="post">
+          <div class="form-group">
+            <label for="sepal_length">Enter sepal_length:</label>
+            <input type="number" class="form-control" step="0.01" id="sepal_length" name="sepal_length" required min="4" max="8">
+          </div>
+          <div class="form-group">
+            <label for="sepal_width">Enter sepal_width:</label>
+            <input type="number" class="form-control"  step="0.01" id="sepal_width" name="sepal_width" required  min="2" max="5">
+          </div>
+          <div class="form-group">
+            <label for="petal_length">Enter petal_length:</label>
+            <input type="number" class="form-control"  step="0.01" id="petal_length" name="petal_length" required  min="1" max="7">
+          </div>
+          <div class="form-group">
+            <label for="petal_width">Enter petal_width:</label>
+            <input type="number" class="form-control" step="0.01" id="petal_width" name="petal_width" required  min="0.1" max="3">
+          </div>
+          <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
