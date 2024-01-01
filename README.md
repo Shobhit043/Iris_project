@@ -43,5 +43,9 @@ Two machine learning models were trained on the Iris dataset:
 Random Forest Classifier performed the best thus we choose it.
 These results may vary based on the dataset split and hyperparameters used.
 
+# demo
+
+https://github.com/Shobhit043/Iris_project/assets/155233157/b73db328-218c-4825-b95c-4ac0fb1f45b3
+
 # License
 This project is licensed under the MIT License - see the LICENSE file for details
