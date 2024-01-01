@@ -1,5 +1,6 @@
 # Iris_project
 This project is dedicated to analyze the dataset and create a ML model to predict the species of iris flower based on its features
+
 # Overview
 This project aims to predict the species of iris flowers based on features such as sepal length, sepal
 width, petal length, and petal width. The prediction is done using machine learning models trained on
@@ -42,6 +43,13 @@ Two machine learning models were trained on the Iris dataset:
 
 Random Forest Classifier performed the best thus we choose it.
 These results may vary based on the dataset split and hyperparameters used.
+
+![Screenshot (460)](https://github.com/Shobhit043/AccidentDetector/assets/155233157/bc7b8af6-32d6-48c5-9a85-902dd62ab75f)
+
+# Decision boundry
+
+![Screenshot (461)](https://github.com/Shobhit043/AccidentDetector/assets/155233157/885b3f66-7f13-41c9-8b76-2990218face0)
+
 
 # demo
 
